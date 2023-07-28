@@ -1,0 +1,89 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30vh;
+  width: 100%;
+  margin: 50px;
+}
+#start{
+  width: 20vmin;
+  height: 20vmin;
+  font-size: 50px;
+  font-weight: bold;
+  border-radius: 2vmin;
+  background:linear-gradient(to bottom right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  color: black;
+  cursor: pointer;
+}
+#start:active,.btn:active{
+  transition: all .1s;
+  border-radius: 5vmin;
+  animation-name: x;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-duration: .1s;
+}
+@keyframes x {
+  100%{
+  transform: scale(0.7);
+  }
+  
+}
